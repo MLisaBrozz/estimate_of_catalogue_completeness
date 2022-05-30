@@ -7,10 +7,29 @@ We used GLADE (v 2.4)  from **Vizier**.
 
 For more information http://vizier.u-strasbg.fr
 
+To perform the analysis, we defined the function *completeness*, which takes the url of the skymap and returns useful parameters such as 
+**name**, the credible volume within the 3-D credible region **vol**, the total luminosities of galaxies inside the volume, **lum_tot**, the apparent mean magnitudue of the galaxies **m_th**, the mean luminosity distance, **distmean**, which are subsequently used in other functions.
+
+Below the graph obtained for the event GW170817 with the algorithm that was run on 50 events of the first three observational runs of HLV from GWTC\nobreakdash-2. 
+In red the Schechter function is described as a function of luminosities and considering:
+ - $\phi^* = 1.6\pm (0.3)\times 10^{-2} h^3 Mpc^3 $ ;
+ - $L^{*}_{B} = 1.2 \pm 0.1 \times 10^{10} h^{-2} L_{B,\odot}$ ;
+ - $\alpha= -1.07 \pm 0.07$.
+The distributions of luminosity of the galaxies contained within the 90\% of credible volume have been plotted in blue, considering a shell of distance $d_\mathrm{L} \pm 3\sigma$ and galaxies from GLADE (v.2.4) catalogue.
+The graphs give us at a glance an estimate of the completeness of the catalogue with respect to the probability region where the GW event is localised.
+
+![GW170817_schechter](https://user-images.githubusercontent.com/91550119/170940355-faa29752-1698-4aa2-bb76-d8bfda2b1875.png)
+
+
 In order to get a more complete picture, we identify the intersection area with the Galactic dust extinction and what percentage of the gravitational-wave sky location falls in it. 
 
-A summary table is also provided in which a "completeness coefficient" is determined for each gravitational-wave sky localization.
+In case of event GW170817 you get the following map .
 
+![intersection](https://user-images.githubusercontent.com/91550119/170942693-c84b149d-29fb-4225-bc23-793aeef33214.png)
+
+
+A summary table is also provided in which a "completeness coefficient" is determined for each gravitational-wave sky localization.
+The *completeness coefficient* can be transmitted via the GCN alert system whenever a gravitational event is recorded, so that telescopes can have an estimate of the completeness in the localisation region in order to detect the host galaxies. But also may be useful to understand which regions of the sky are incomplete so as to promote campaigns to increase the completeness.
 
 *Maria Lisa Brozzetti*, <marialisa.brozzetti@studenti.unipg.it> 
 
